@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-core';
+  title = 'Angular Core';
+
+  data = {
+    name: 'Bal Vikash Sharma'
+  };
+
+  onClick(): void {
+    alert('I am clicked');
+  }
+
+  onKeyup(newTitle: string): void {
+    this.title = newTitle;
+  }
 }
