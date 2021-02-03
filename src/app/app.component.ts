@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-core';
+  name = 'bal vikash sharma';
+  todaysDate = new Date();
+  cost = 5000;
+  temperature = 10.5;
+  pizza = {
+    toppings: ['paneer', 'mashroom'],
+    size: 'large'
+  };
 }
