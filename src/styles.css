@@ -1,1 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* https://stackoverflow.com/questions/44136274/cannot-resolve-directory-bootstrap */
+@import '~bootstrap/dist/css/bootstrap.min.css';

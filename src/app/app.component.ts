@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-core';
+  text = '';
+  reversedText = '';
+
+  onChangeText(value: string): void {
+    this.text = value;
+  }
+
+  onSubmit(): void {
+    this.reversedText = this.text.split('').reverse().join('');
+  }
+
+  isTextPresent(): boolean {
+    return !this.text.length;
+  }
 }
