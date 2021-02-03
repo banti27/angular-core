@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-core';
+  posts = [
+    {
+      img: '/assets/image1.jpg',
+      author: 'Bal',
+      title: 'Titile #1'
+    },
+    {
+      img: '/assets/image2.jpg',
+      author: 'Viaksh',
+      title: 'Titile #2'
+    },
+    {
+      img: '/assets/image3.jpg',
+      author: 'Sharma',
+      title: 'Titile #3'
+    }
+  ];
 }
