@@ -1,0 +1,14 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>Drink</th>
+    <th>Instructions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let d of drinks">
+    <td [innerHTML]="getBold(d.strDrink)"></td>
+    <td [innerHTML]="getBold(d.strInstructions)"></td>
+  </tr>
+  </tbody>
+</table>
